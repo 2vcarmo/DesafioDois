@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links das páginas, fontes usadas e responsividade.-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsividade.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500&family=Squada+One&display=swap" rel="stylesheet">
+
+    <!-- Titulo da página-->
+    <title>Jogo de Advinhação</title>
+</head>
+<body>
+    
+<main>
+    <section>
+        <h1>O JOGO</h1>
+        <div class="esquerda">
+            <img src="./img/image 1.png" alt="Imagem do perfil do usuário">
+        <div>
+            <label>Nick:</label>
+            <input type="text" id="nick" name="nick">
+        </div>
+        <div id="intervalos">
+            <label for="intervalo">Intervalo:</label>
+            <select id="intervalo" name="intervalo">
+                <option value="1">Opção 1: 1 a 10</option>
+                <option value="2">Opção 2: 1 a 100</option>
+                <option value="3">Opção 3: 1 a 200</option>
+            </select>
+        </div>
+        <button id="comecar">Começar</button>
+        </div>
+        <hr>
+        <div class="direita">
+            <p class="nome"></p>
+            <div>
+                <label>Digite um número:</label>
+                <input type="number" id="numero" name="numero">
+            </div>
+            <button id="jogar">Jogar</button>
+
+            <strong><p id="resultado"></p></strong>
+            <p id="tentativas"></p>
+        </div>
+    </section>
+</main>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>

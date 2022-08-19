@@ -1,0 +1,217 @@
+/* VARIÁVEIS */
+:root{
+    --laranja: #F2890D;
+    --azul: #1180E7;
+    --lilas: #B0A3A3;
+    --preto: #000000;
+    --branco: white;
+}
+
+/* ZERANDO AS MARGENS DO SITE */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--laranja);
+    width: 100%;
+}
+
+h1{
+    position: absolute;
+    width: 35vh;
+    height: 150px;
+    top: 2px;
+
+    font-family: 'Squada One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 74px;
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--azul);
+    border-radius: 20px;
+}
+
+main{
+    max-width: 1084px;
+    width: 84vw;
+    height: fit-content;
+    background-color: var(--branco);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Style do card esquerdo */
+section .esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0 2rem;
+}
+
+.esquerda img{
+    width: 56.5%;
+}
+
+.esquerda div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.esquerda div label{
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+.esquerda #nick{
+    width: 24vw;
+    height: 42px;
+    margin-bottom: 9%;
+    border: 3px solid var(--lilas);
+    border-radius: 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 5px;
+}
+
+.esquerda div select{
+    width: 24vw;
+    height: 42px;
+    border: 3px solid var(--lilas);
+    border-radius: 5px;
+    margin-bottom: 9%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.esquerda button{
+    width: 200px;
+    height: 42px;
+    margin-top: 6%;
+    background: var(--azul);
+    border: 3px solid var(--preto);
+    border-radius: 20px;
+
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--branco);
+    text-align: center;
+    cursor: pointer;
+}
+
+section hr{
+    height: 35vw;
+    max-height: 430px;
+    border: 1px solid var(--lilas);
+    margin-top: 14%;
+    justify-self: center;
+    justify-content: center;
+}
+
+/* Style do card direito */
+
+section .direita{
+    margin-top: 15%;
+    margin-bottom: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.direita p{
+    width: 31vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.direita div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.direita div label{
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.direita div input{
+    max-width: 350px;
+    height: 42px;
+    margin-bottom: 9%;
+    border: 3px solid var(--lilas);
+    border-radius: 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 5px;
+}
+
+.direita button{
+    width: 200px;
+    height: 42px;
+    background: var(--laranja);
+    border: 3px solid var(--preto);
+    border-radius: 20px;
+    margin-bottom: 7%;
+
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--branco);
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover{
+    border-color: var(--lilas);
+}
+
+
